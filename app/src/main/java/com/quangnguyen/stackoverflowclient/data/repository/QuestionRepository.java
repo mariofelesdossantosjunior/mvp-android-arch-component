@@ -35,6 +35,7 @@ public class QuestionRepository implements QuestionDataSource {
                     .toList()
                     .toFlowable();
 
+            //remove this code
             /*questions = remoteDataSource.loadQuestions(true).doOnEach(notification -> {
                 // Save new data to local data source
                 List<Question> list = notification.getValue();
@@ -61,6 +62,7 @@ public class QuestionRepository implements QuestionDataSource {
         throw new UnsupportedOperationException("Unsupported operation");
     }
 
+    //remove this code
    /* // A helper method to save data in database after fetching new data from remote source.
     private void saveDataToLocal(List<Question> questions) {
         // Clear old data
