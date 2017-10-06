@@ -26,7 +26,7 @@ public class QuestionRemoteDataSource implements QuestionDataSource {
   }
 
   @Override
-  public void addQuestion(Question question) {
+  public Question addQuestion(Question question) {
     //Currently, we do not need this for remote source.
     throw new UnsupportedOperationException("Unsupported operation");
   }

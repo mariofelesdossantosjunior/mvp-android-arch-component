@@ -25,9 +25,10 @@ public class QuestionLocalDataSource implements QuestionDataSource {
   }
 
   @Override
-  public void addQuestion(Question question) {
+  public Question addQuestion(Question question) {
     // Insert new one
     questionDao.insert(question);
+    return question;
   }
 
   @Override

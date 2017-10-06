@@ -11,7 +11,7 @@ import java.util.List;
 public interface QuestionDataSource {
   Flowable<List<Question>> loadQuestions(boolean forceRemote);
 
-  void addQuestion(Question question);
+  Question addQuestion(Question question);
 
   void clearData();
 }
